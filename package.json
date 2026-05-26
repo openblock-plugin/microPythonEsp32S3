@@ -53,7 +53,6 @@
       "microPython"
     ],
     "helpLink": "https://wiki.openblock.cc/general-hardware-guidelines/boards/esp32-s3",
-    "libraries": "./libraries",
     "firmwares": [
       {
         "id": "standard",
