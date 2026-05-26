@@ -74,7 +74,7 @@ export default Blockly => {
             '    angle = 180\n' +
             '  elif(angle < 0):\n' +
             '    angle = 0\n' +
-            '  return int((SERVO_MIN_PULSE_WIDTH + (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH) * angle / 180) / (200 * 100 / 1024))\n';
+            '  return int((SERVO_MIN_PULSE_WIDTH + (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH) * angle / 180) / (200 * 100 / 1024))\n'; // eslint-disable-line max-len
 
         return `pwm${pin}.duty(getServoPulse(${out}))\n`;
     };
@@ -89,7 +89,7 @@ export default Blockly => {
         if (branch) {
             const variablesName = [];
             for (const x in Blockly.Python.variables_) {
-                variablesName.push(Blockly.Python.variables_[x].slice(0, Blockly.Python.variables_[x].indexOf('=') - 1));
+                variablesName.push(Blockly.Python.variables_[x].slice(0, Blockly.Python.variables_[x].indexOf('=') - 1)); // eslint-disable-line max-len
             }
             if (variablesName.length !== 0) {
                 branch = `${Blockly.Python.INDENT}global ${variablesName.join(', ')}\n${branch}`;

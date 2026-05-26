@@ -1,4 +1,4 @@
-const { formatMessage, ArgumentType, BlockType, ProgramModeType, CommonPeripheral } = window.Scratch;
+const {formatMessage, ArgumentType, BlockType, ProgramModeType, CommonPeripheral} = window.Scratch;
 
 const PNPID_LIST = [
     // CH340
@@ -32,12 +32,42 @@ const DIVECE_OPT = {
 };
 
 const Pins = {
-    IO0: '0', IO1: '1', IO2: '2', IO3: '3', IO4: '4', IO5: '5',
-    IO6: '6', IO7: '7', IO8: '8', IO9: '9', IO10: '10', IO11: '11',
-    IO12: '12', IO13: '13', IO14: '14', IO15: '15', IO16: '16', IO17: '17',
-    IO18: '18', IO19: '19', IO20: '20', IO21: '21', IO35: '35', IO36: '36',
-    IO37: '37', IO38: '38', IO39: '39', IO40: '40', IO41: '41', IO42: '42',
-    IO43: '43', IO44: '44', IO45: '45', IO46: '46', IO47: '47', IO48: '48'
+    IO0: '0',
+    IO1: '1',
+    IO2: '2',
+    IO3: '3',
+    IO4: '4',
+    IO5: '5',
+    IO6: '6',
+    IO7: '7',
+    IO8: '8',
+    IO9: '9',
+    IO10: '10',
+    IO11: '11',
+    IO12: '12',
+    IO13: '13',
+    IO14: '14',
+    IO15: '15',
+    IO16: '16',
+    IO17: '17',
+    IO18: '18',
+    IO19: '19',
+    IO20: '20',
+    IO21: '21',
+    IO35: '35',
+    IO36: '36',
+    IO37: '37',
+    IO38: '38',
+    IO39: '39',
+    IO40: '40',
+    IO41: '41',
+    IO42: '42',
+    IO43: '43',
+    IO44: '44',
+    IO45: '45',
+    IO46: '46',
+    IO47: '47',
+    IO48: '48'
 };
 
 const Level = {
